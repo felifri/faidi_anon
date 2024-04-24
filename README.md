@@ -1,11 +1,8 @@
 # Fair-Diffusion
 
-Repository to the [Paper](https://arxiv.org/abs/2302.10893) **Fair Diffusion: Instructing Text-to-Image Generation Models on Fairness**
+Repository to **Fair Diffusion: Instructing Text-to-Image Generation Models on Fairness**
 
 ![Teaser](firefighter_example.png)
-
-## News
-A demo is available at [Huggingface](https://huggingface.co/spaces/AIML-TUDA/FairDiffusionExplorer) and you can find a recent article about our work at [MIT Technology Review](https://www.technologyreview.com/2023/03/28/1070390/what-if-we-could-just-ask-ai-to-be-less-biased/)
 
 ## Requirements
 A model editing technique has to be installed first. This repositories builds on Sega, but can be adjusted to other methods, too. Further information about [Sega](https://github.com/ml-research/semantic-image-editing).
@@ -51,16 +48,3 @@ We provide `test_notebook.ipynb` for further experiments on Fair Diffusion. It c
 Our results can be repoduced with the provided code. `generate_images.py` enables to generate images for occupations from `occupations.txt` and `evaluate_images.ipynb` evaluates them. `CLIP_iEAT.ipynb` computes the iEAT to insight biases in CLIP.
 
 The models stored in `dlib_models/` are taken from FairFace, which is used to classify generated images for gender. To evaluate laion, the laion dataset has to be downloaded, however, we provide the already evaluated statistics in `results_fairface_laion.txt`.
-
-
-## Citation
-If you like or use our work please cite us:
-```bibtex
-@article{friedrich2023FairDiffusion,
-      title={Fair Diffusion: Instructing Text-to-Image Generation Models on Fairness}, 
-      author={Felix Friedrich and Manuel Brack and Lukas Struppek and Dominik Hintersdorf and Patrick Schramowski and Sasha Luccioni and Kristian Kersting},
-      year={2023},
-      journal={arXiv preprint at arXiv:2302.10893}
-}
-```
-
